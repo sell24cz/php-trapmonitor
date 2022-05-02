@@ -1,12 +1,13 @@
 <?php
 
 
-ini_set('display_errors', 0);
+ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1); 
-error_reporting(E_ALL);
+error_reporting(E_ALL & ~E_NOTICE);
 
 
 include_once("inc/lib.php");
+include_once("inc/class.index.php");
 
 
 if( formatujPOST('block') != NULL)
@@ -25,7 +26,7 @@ $alert = "OID name delete: ".formatujPOST('name')." ";
 
 }
 
-
+$show='';
 
 
 ?>
@@ -302,6 +303,8 @@ $(document).ready( function () {
     $('#table_id').DataTable();
 } );
 
+
+$('#example').tooltip(options)
 
 </script>  
 <hr>
