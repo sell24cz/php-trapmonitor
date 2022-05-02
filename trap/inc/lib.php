@@ -19,7 +19,7 @@
    $this->host = 'localhost';
    $this->databases = 'trap';
    $this->user = 'trap';
-   $this->pass = 'password';
+   $this->pass = 'Z8XZegQs2p7C';
    $this->polacz = mysqli_connect($this->host, $this->user,$this->pass);
    mysqli_select_db($this->polacz, $this->databases);
      }
@@ -123,6 +123,7 @@ function mysql_q($query, $default_value="")
     else
     {
         $row = $result->fetch_row();
+//     return mysqli_result($result,0);
         return $row[0];
     }
 }
