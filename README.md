@@ -2,8 +2,8 @@
 php-trapmonitor is an php trpahandler that processes snmp traps.
 
 ## screenshots
+![trap](https://user-images.githubusercontent.com/83060284/166194205-e926e770-3bd3-46b1-80bc-979aeb6aa862.png)
 
-![trap](https://user-images.githubusercontent.com/83060284/166136936-cd655396-5e9d-4ce4-910d-f1292a66edff.png)
 
 
 ## setup
