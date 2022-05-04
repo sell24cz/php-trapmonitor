@@ -39,21 +39,17 @@ echo '
 
 $id='1';
 
-$sql = "SELECT * FROM `disable_trap`";
-$zapytanie = GetSQL ("$sql");
-while($rr = sql_fetch_array($zapytanie)) {
 
-    $nazwa = $rr['nazwa'];
-    $sql_add = "and objname not like '%$nazwa%'" ;
-    $new= "$new $sql_add" ;
+$getDisabletrap = mysql_q("SELECT GROUP_CONCAT(nazwa SEPARATOR '|') AS summary FROM disable_trap ;");
+$getDisabletrap = "and objname NOT RLIKE '".$getDisabletrap."'  "  ;
 
-}
+
 
 if (formatujPOST('show') == 'showList' ) {
     $sql = "SELECT distinct id,objname,info,time,state from 1nmp where objname ='".formatujPOST('objname')."'" ;
 }
 else {
-$sql = "SELECT distinct id,objname,info from 1nmp where time  > NOW() - INTERVAL 1 DAY $new";
+    $sql = "SELECT distinct id,objname,info from 1nmp where time  > NOW() - INTERVAL 100 DAY $getDisabletrap";
 }
 
 //echo $sql;
