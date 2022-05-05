@@ -60,7 +60,7 @@ mysql -u root -p snmptraps < install/SCHEMA.sql
 ```
 3. update password and user name 
 
-inc/lib/php
+inc/lib.php
 
 ```
    $this->databases = 'gpon';
