@@ -62,8 +62,8 @@ mysql -u root -p snmptraps < install/SCHEMA.sql
 
 inc/lib/php
 
-,,,,
+```
    $this->databases = 'gpon';
    $this->user = 'gpon';
    $this->pass = 'pass';
-,,,,
+```
