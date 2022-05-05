@@ -17,6 +17,7 @@ php-trapmonitor is an php trpahandler that processes snmp traps.
 
 You need install:
 - net-snmp 
+- snmptrapd
 - apache 
 - php 
 - mysql installation with default apache 
