@@ -18,7 +18,7 @@
      {
    $this->host = 'localhost';
    $this->databases = 'trap';
-   $this->user = 'trap';
+   $this->user = 'snmptraps';
    $this->pass = 'pass';
    $this->polacz = mysqli_connect($this->host, $this->user,$this->pass);
    mysqli_select_db($this->polacz, $this->databases);
