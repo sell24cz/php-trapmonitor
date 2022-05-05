@@ -2,9 +2,16 @@
 php-trapmonitor is an php trpahandler that processes snmp traps.
 
 ## screenshots
-![trap](https://user-images.githubusercontent.com/83060284/166194205-e926e770-3bd3-46b1-80bc-979aeb6aa862.png)
+
+![trap](https://user-images.githubusercontent.com/83060284/166908564-fffb9dc0-eeda-4566-be47-de288ff46c34.png)
 
 
+## device
+
+- prostream
+- elemental
+- ups
+- dasan
 
 ## setup
 
@@ -26,9 +33,11 @@ agentaddress [my ip address]:162
 # set php-snmptraps as default trap handler
 traphandle default /usr/bin/php [yours directory]snmp-handler.sh
 ```
-```
-cp [yours directory]/install/snmp-handler.sh 
-```
+
+ snmp-handler.sh is in directory: 
+
+- bin/snmp-handler.sh
+
 
 2. sql
 
