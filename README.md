@@ -58,3 +58,12 @@ Bye
 # import SCHEMA.SQL file
 mysql -u root -p snmptraps < install/SCHEMA.sql
 ```
+3. update password and user name 
+
+inc/lib/php
+
+,,,,
+   $this->databases = 'gpon';
+   $this->user = 'gpon';
+   $this->pass = 'pass';
+,,,,
